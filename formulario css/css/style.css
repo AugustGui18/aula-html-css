@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+body{
+    animation-name: anim1;
+    
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    height: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.form{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.form img{
+    max-width: 500px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.texto{
+    font-size: 20;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #f7fff9;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 80%;
+    margin-top: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: anim3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+   
+}
+.form input[type=text],
+.form input[type=email]{
+    max-width: 500px;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border: 1px solid;
+    display: block;
+    margin: 10px auto;
+    padding-left: 10px;
+    border-radius:5px;
+    animation-name: anim2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    border: 0;
+}
+
+
+.form textarea{
+    resize: vertical;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 15px;
+    max-width: 500px;
+    width: 100%;
+    height: 120px;
+    animation-name: anim2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    border: 0;
+}
+
+.form input[type=submit]{
+    max-width: 500px;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border: 1px solid;
+    display: block;
+    margin: 10px auto;
+    padding-left: 10px;
+    border-radius:5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    animation-name: anim2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    border: 0;
+}
+
+@keyframes anim1{
+    0%{background-color: #04270d;}
+    25%{background-color: #074d19;}
+    100%{background-color: #0f611a;}
+}
+
+@keyframes anim2{
+    0%{background-color: #00ff22;} 
+   25%{background-color: #074d19;}
+   90%{background-color: #04270d;}
+    100%{background-color: #00ff22;} 
+}
+@keyframes anim3{
+    0%{background-color: #00ff22;width: 15%;height: 50px;} 
+    25%{background-color: #074d19;width: 20%;height:35px; }
+    90%{background-color: #04270d;width: 15%;height:30px; }
+     100%{background-color: #00ff22;width: 25%;height: 25px;} 
+}
